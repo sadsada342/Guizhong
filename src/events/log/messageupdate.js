@@ -37,8 +37,8 @@ module.exports = {
                     const embed = new EmbedBuilder()
                         .setTitle("✏️ 訊息已編輯")
                         .setDescription(
-                            `**原訊息：**\n${oldMessage ? oldMessage.content || '無內容' : '無法獲取'}\n\n` +
-                            `**新訊息：**\n${newMessage ? newMessage.content || '無內容' : '無法獲取'}\n\n` +
+                            `**原訊息：**\n${oldMessage ? oldMessage.content : '无法获取'}\n\n` +
+                            `**新訊息：**\n${newMessage ? newMessage.content : '无法获取'}\n\n` +
                             `(發送於 ${dateCreated}, 頻道 <#${message.channel.id}>)`
                         )
                         .setColor(config.embedColour)
@@ -57,3 +57,4 @@ module.exports = {
         }
     },
 };
+//那么多comments干鸡毛o.o
